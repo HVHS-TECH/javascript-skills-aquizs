@@ -30,13 +30,19 @@ OUTPUT.innerHTML += "<p>You will have 500 dollars</h2>";
 OUTPUT.innerHTML += "<p>You spend half of your money, now you have "+ pocketMoney/2 + "</p>";
 OUTPUT.innerHTML += "<p>Then you get $3, now you have " + (pocketMoney+3) + "</p>";
 
-writeLine()
-displayWelcome("AdamKwok")
-
 
 /**************************
  Functions
  **************************/
 function displayWelcome (_name){
-    OUTPUT.innerHTML += "<p>Less code matters"+_name+"</p>";
+    OUTPUT.innerHTML += "<h2> <br>Welcome to the shop</br> </h2>";
 }
+
+function displayProduct (_name, _price){
+    OUTPUT.innerHTML += "<br>"+ _name + ": " + _price
+}
+
+displayWelcome()
+displayProduct ("Chocolate bar","$4")
+displayProduct ("Chips", "$4")
+displayProduct ("Drink", "$4")
