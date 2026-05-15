@@ -26,9 +26,11 @@ console.log("Then you get $3, now you have" ,+ pocketMoney+3)
  Functions
  **************************/
 
- const NAME_FIELD = document.getElementById("nameField");
- let userName = NAME_FIELD.value;
- OUTPUT.innerHTML = "<p>Your name is "+userName+"</p>";
+ function getFormInput(){
+    const NAME_FIELD = document.getElementById("nameField");
+    let userName = NAME_FIELD.value;
+    OUTPUT.innerHTML = "<h1>Your name is "+userName+"</h1>";
+ }
 
  const OUTPUT = document.getElementById("JavaScriptOutput");
 
