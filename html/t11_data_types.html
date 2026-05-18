@@ -19,14 +19,32 @@
   <h1>T11-data types</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
+    <form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type="text" id="nameField" name="formName" placeholder="Name">
+    <input type="submit" onclick=getFormInput()>
+  </form>
+
+      <form onsubmit="return false;">
+    <label for="formName">Age:</label>
+    <input type="text" id="ageField" name="formName" placeholder="Age">
+    <input type="submit" onclick=getFormInput()>
+  </form>
+
+      <form onsubmit="return false;">
+    <label for="formName">Pocket Money:</label>
+    <input type="text" id="pocketmoneyField" name="formName" placeholder="Pocket Money">
+    <input type="submit" onclick=getFormInput()>
+  </form>
+
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
-  <div id="spaceForJavaScriptOutput">
+<button onclick="start()">Start</button>
 
-    The output of your script will go here.
-
+    </div>
+      <div id="JavaScriptOutput">
+    <p>I think this is gonna get replaced idk</p>
   </div>
-
 
   <script src="../t11_data_types.js"></script>
 

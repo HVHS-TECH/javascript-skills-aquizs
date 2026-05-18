@@ -1,5 +1,5 @@
 /****************************
-Name of task: Task 3
+Name of task: Task 6
 ****************************/
 
 //Variables
