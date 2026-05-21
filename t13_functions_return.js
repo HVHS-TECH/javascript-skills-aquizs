@@ -26,48 +26,35 @@ console.log("Then you get $3, now you have" ,+ pocketMoney+3)
  Functions
  **************************/
 
- function getFormInput(){
+ function getName(){
     const NAME_FIELD = document.getElementById("nameField");
     let userName = NAME_FIELD.value;
     OUTPUT.innerHTML = "<h1>Your name is "+userName+"</h1>";
  }
 
-  function getFormInput(){
+  function getAge(){
     const AGE_FIELD = document.getElementById("ageField");
     let age = AGE_FIELD.value;
     OUTPUT.innerHTML = "<h1>Your age "+age+"</h1>";
  }
-
-   function getFormInput(){
-    const POCKETMONEY_FIELD = document.getElementById("pocketmoneyField");
-    let pocketMoney = POCKETMONEY_FIELD.value;
-    OUTPUT.innerHTML = "<h1>Your pocketmoney "+pocketMoney+"</h1>";
- }
+ 
 function getMoneyInput(){
         const POCKETMONEY_FIELD = document.getElementById("moneyInput");
-    let pocketMoney = POCKETMONEY_FIELD.value;
- if (pocketMoney >= 4){
-    console.log ("A chocolate bar costs $4. You CAN afford a chocolate bar")
- } else {
-    console.log ("A chocolate bar costs $4. You CANT afford a chocolate bar")
- }
+    let pocketMoney = Number(POCKETMONEY_FIELD.value);
+    calculateChange(pocketMoney,4);
 }
 
+function calculateChange (_money, _price){
+    let change = _money - _price;
+ if (_money >= _price){
+    OUTPUT.innerHTML = ("A chocolate bar costs $" + _price +". Your change is $" + change + "</h1>")
+ } else {
+    OUTPUT.innerHTML = ("A chocolate bar costs $4. You CANT afford a chocolate bar")
+ }
+}
 
  const OUTPUT = document.getElementById("JavaScriptOutput");
 
-     function calculateChange(_money, _price){
-    let change = _money - _price
-}
-
-    if (pocketMoney >= 4){
-        OUTPUT.innerHTML = "<h1>Your change is "+change+"</h1>";
-    } else {
-        OUTPUT.innerHTML = "<h1>You cant afford this chocolate bar."
-    }
-
-function chocolateBar (){
-}
 
 function start (){
 
