@@ -19,14 +19,40 @@
   <h1>T15-for loop</h1>
   <p>Open the console <code>(Ctrl-shift-i)</code> to see the messages.</p>
 
+    <form onsubmit="return false;">
+    <label for="formName">Name:</label>
+    <input type="text" id="nameField" name="formName" placeholder="Name">
+    <input type="submit" onclick=getName()>
+  </form>
+
+      <form onsubmit="return false;">
+    <label for="formName">Age:</label>
+    <input type="text" id="ageField" name="formName" placeholder="Age">
+    <input type="submit" onclick=getAge()>
+  </form>
+
+      <form onsubmit="return false;">
+    <label for="formName">Pocket Money:</label>
+    <input type="text" id="moneyInput" name="formName" placeholder="Pocket Money">
+    <input type="submit" onclick=getMoneyInput()>
+  </form>
+
+<h1>On a scale of 0-3 how much do you like chocolate</h1>
+
+  <form onsubmit="return false;">
+    <label for="formName">Chocolate scale</label>
+    <input type="text" id="scaleField" name="formName" placeholder="scale">
+    <input type="submit" onclick=getScale()>
+  </form>
+
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
-  <div id="spaceForJavaScriptOutput">
+  <button onclick="start()">Start</button>
 
-    The output of your script will go here.
-
+    </div>
+      <div id="JavaScriptOutput">
+    <p>I think this is gonna get replaced idk</p>
   </div>
-
 
   <script src="../t15_for_loop.js"></script>
 

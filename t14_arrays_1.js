@@ -54,10 +54,10 @@ function calculateChange (_money, _price){
 }
 
 function getScale(){
-    const CHOOSEFIELD_FIELD = document.getElementById("getScale")
-let chocolateArray = ["chocolate is buns", "chocolate is okay", "chocolate is pretty good", "chocolate is the best, yummy"]
-let choice = CHOOSE_FIELD.value;
-OUTPUT.innerHTML = chocolateArray;
+const CHOOSEFIELD_FIELD = document.getElementById("scaleField")
+let chocolateArray = ["chocolate is buns", "chocolate is okay", "chocolate is pretty good", "chocolate is the best yummy"]
+let choice = CHOOSEFIELD_FIELD.value;
+OUTPUT.innerHTML = "You chose: "+chocolateArray[choice]+"<br>";
 }
 
 
