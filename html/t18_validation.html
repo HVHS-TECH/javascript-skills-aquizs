@@ -21,11 +21,14 @@
 
   <p><br><br><i>Copy your HTML from the last task and keep building.</i><br><br><br><br></p>
 
-  <div id="spaceForJavaScriptOutput">
+  <form onsubmit="return false;">
+    <label for="formName">shopping list</label>
+    <input type="text" id="listField" name="formName" placeholder="Shopping List:" required>
+    <input type="submit" onclick="getList()">
+  </form>
 
-    The output of your script will go here.
-
-  </div>
+  <div id="outputField"></div>
+  <script src="../t16_arrays_continued.js"></script>
 
 
   <script src="../t18_validation.js"></script>
